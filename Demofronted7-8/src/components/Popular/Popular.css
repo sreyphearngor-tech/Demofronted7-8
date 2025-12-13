@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.popular {
+  width: 100%;
+
+  text-align: center;
+
+margin-top: 20px;
+  height:1280px;
+  padding:50px 60px;
+}
+
+.popular h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+
+}
+
+.popular-item {
+  justify-content: center;
+ display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px; 
+  height: 500px;
+
+  padding:40px 60px;
+  width:100%;
+
+}
+
+/* Card Animation */
+.item {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.item p{
+    margin:6px 15px;
+}
+.item-price {
+    margin-top: 0 5px;
+    font-size: 18px;
+    margin-left: 25px;
+     display: flex;
+     gap:10px;
+ 
+}
+.item-price .item-old{
+     text-decoration: line-through;
+     color: red;
+     display: flex;
+
+} 
+.item-new{
+    color:gray;
+    font-size:18px;
+     font-weight: 600;
+
+ 
+}
+ .item-old{
+color:gray;
+ font-size:18px;
+ font-weight: 600;
+
+
+}
+.item:hover{
+    transform: scale(1.05);
+    transform: 0.3s ease;
+}
+.item img {
+  width: 100%;      /* important */
+  height: 360px;    /* or auto if u want */
+  object-fit: cover;
+  border-radius: 10px;
+  gap:20px;
+  display: block;
+  flex-wrap: wrap;
+  padding:10px 10px;
+
+}
